@@ -52,6 +52,14 @@ public class Profile
         this.gender = gender;
     }
 
+    public Profile(Customer customer, String firstName, String lastName, Gender gender)
+    {
+        this.customer = customer;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+    }
+
     public long getId()
     {
         return id;

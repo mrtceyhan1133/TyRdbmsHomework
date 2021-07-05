@@ -14,6 +14,9 @@ public class Customer {
     @OneToOne(cascade = CascadeType.ALL, mappedBy = "customer", orphanRemoval = true)
     private Profile profile;
 
+    @OneToOne(cascade = CascadeType.ALL, mappedBy = "basket", orphanRemoval = true)
+    private Basket basket;
+
     @NotNull
     private String name;
 
